@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Email AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .preview-text { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .priority-badge { font-size: 0.85rem; padding: 0.45em; }
+        .new-email { background-color: #f0f8ff; } /* màu nền nhẹ cho email chưa xử lý */
+        .toast-container { position: fixed; top: 1rem; right: 1rem; z-index: 1055; }
+    </style>
+</head>
+<body class="bg-light">
+
+<!-- Header -->
+<div class="header position-relative text-white" 
+     style="background: linear-gradient(rgba(35, 32, 32, 0.3), rgba(35, 32, 32, 0.3)), url('/static/header.png') no-repeat center center; background-size: cover; padding: 80px 20px; height:200px;">
+    <a href="{{ url_for('refresh') }}" class="btn btn-outline-light position-absolute top-0 start-0 m-3">🔄 Làm mới</a>
+    <h1 class="fw-bold text-center" style="margin:0; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">
+        📩 PHÂN LOẠI VÀ ƯU TIÊN EMAIL KHÁCH HÀNG
+    </h1>
+    {% if session.username %}
+        <div class="position-absolute bottom-0 end-0 m-3 d-flex align-items-center gap-2">
+            <span class="fw-bold">Xin chào, {{ session.username }}</span>
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm mt-2">Đăng xuất</a>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Bộ lọc + tìm kiếm -->
+<div class="container my-4">
+    <div class="card shadow-sm p-3">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Lọc theo loại email:</label>
+                <select id="locLoai" class="form-select">
+                    <option value="">Tất cả</option>
+                    <option value="Khiếu nại">Khiếu nại</option>
+                    <option value="Đặt hàng">Đặt hàng</option>
+                    <option value="Hỏi đáp">Hỏi đáp</option>
+                    <option value="Góp ý">Góp ý</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Lọc theo mức ưu tiên:</label>
+                <select id="locUuTien" class="form-select">
+                    <option value="">Tất cả</option>
+                    <option value="Cao">Cao</option>
+                    <option value="Trung bình">Trung bình</option>
+                    <option value="Thấp">Thấp</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label fw-bold">Tìm kiếm nhanh:</label>
+                <input type="text" id="searchEmail" class="form-control" placeholder="Tìm theo tiêu đề, nội dung hoặc email người gửi">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Danh sách Email -->
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white fw-bold">
+            Danh sách Email đã xử lý
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light text-center">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tiêu đề</th>
+                        <th>Nội dung</th>
+                        <th>Email người gửi</th>
+                        <th>Thời gian gửi</th>
+                        <th>Ưu tiên</th>
+                        <th>Gợi ý phản hồi</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="dsEmail">
+                    {% for e in emails %}
+                    <tr class="email-row text-center {% if not e.da_xu_ly %}new-email{% endif %}" 
+                        data-loai="{{ e.tieu_de }}" data-uutien="{{ e.uu_tien }}" data-status="{{ 'da' if e.da_xu_ly else 'chua' }}">
+                        <td>{{ e.stt }}</td>
+                        <td class="fw-bold text-primary">{{ e.tieu_de }}</td>
+                        <!-- Preview 40 ký tự -->
+                        <td class="preview-text" title="{{ e.noi_dung }}">{{ e.noi_dung[:40] }}...</td>
+                        <td class="text-muted">{{ e.email_khach }}</td>
+                        <td class="text-muted">{{ e.thoi_gian_gui }}</td>
+                        <td>
+                            {% if e.uu_tien|lower == "cao" %}
+                                <span class="badge bg-danger priority-badge">Cao</span>
+                            {% elif e.uu_tien|lower == "trung bình" %}
+                                <span class="badge bg-warning text-dark priority-badge">Trung bình</span>
+                            {% else %}
+                                <span class="badge bg-success priority-badge">Thấp</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <span data-bs-toggle="tooltip" title="{{ e.goiy }}">{{ e.goiy[:30] }}...</span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    ...
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" onclick="sendReply({{ e.stt }})">📤 Trả lời nhanh</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal{{ e.stt }}">📄 Xem chi tiết</a></li>
+                                    <li><a class="dropdown-item text-success" href="#" onclick="markRead({{ e.stt }}, this)">✅ Đánh dấu đã xử lý</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Modal xem nội dung -->
+                    <div class="modal fade" id="modal{{ e.stt }}" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title">Nội dung email</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Tiêu đề:</strong> {{ e.tieu_de }}</p>
+                                    <p><strong>Nội dung:</strong></p>
+                                    <pre>{{ e.noi_dung }}</pre>
+                                    <p><strong>Email người gửi:</strong> {{ e.email_khach }}</p>
+                                    <p><strong>Thời gian gửi:</strong> {{ e.thoi_gian_gui }}</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-container"></div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-3 mt-5">
+    &copy; {{ current_year }} Phân loại và ưu tiên Email bằng AI - Lương Thị Trà My / Nguyễn Mạnh Tuân
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Tooltip
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (el) {
+        return new bootstrap.Tooltip(el)
+    })
+
+    // Lọc + tìm kiếm
+    document.getElementById("locLoai").addEventListener("change", filterEmail);
+    document.getElementById("locUuTien").addEventListener("change", filterEmail);
+    document.getElementById("searchEmail").addEventListener("input", filterEmail);
+
+    function filterEmail() {
+        const loai = document.getElementById("locLoai").value.toLowerCase();
+        const uuTien = document.getElementById("locUuTien").value.toLowerCase();
+        const search = document.getElementById("searchEmail").value.toLowerCase();
+
+        document.querySelectorAll(".email-row").forEach(row => {
+            const rowLoai = row.dataset.loai.toLowerCase();
+            const rowUuTien = row.dataset.uutien.toLowerCase();
+            const title = row.cells[1].textContent.toLowerCase();
+            const content = row.cells[2].textContent.toLowerCase();
+            const email = row.cells[3].textContent.toLowerCase();
+
+            const matchLoai = !loai || rowLoai.includes(loai);
+            const matchUuTien = !uuTien || rowUuTien === uuTien;
+            const matchSearch = !search || title.includes(search) || content.includes(search) || email.includes(search);
+
+            row.style.display = (matchLoai && matchUuTien && matchSearch) ? "" : "none";
+        });
+    }
+
+    // Gửi email AJAX
+    async function sendReply(stt) {
+        try {
+            const response = await fetch(`/reply_ajax/${stt}`, { method: 'POST' });
+            const data = await response.json();
+            showToast(data.message, data.status === "success" ? "success" : "danger");
+        } catch (error) {
+            showToast("Lỗi khi gửi email: " + error, "danger");
+        }
+    }
+
+    // Đánh dấu đã xử lý
+    function markRead(stt, el) {
+        const row = el.closest("tr");
+        row.classList.remove("new-email");
+        showToast("Đã đánh dấu email #" + stt + " là đã xử lý", "success");
+    }
+
+    // Toast hiển thị
+    function showToast(message, type="success") {
+        const container = document.querySelector(".toast-container");
+        const toastEl = document.createElement("div");
+        toastEl.className = `toast align-items-center text-white bg-${type} border-0`;
+        toastEl.role = "alert";
+        toastEl.innerHTML = `<div class="d-flex">
+                                <div class="toast-body">${message}</div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                             </div>`;
+        container.appendChild(toastEl);
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        toast.show();
+        toastEl.addEventListener("hidden.bs.toast", () => toastEl.remove());
+    }
+</script>
+
+</body>
+</html>

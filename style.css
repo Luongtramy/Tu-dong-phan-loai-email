@@ -1,0 +1,110 @@
+.header {
+    background-size: cover;
+    padding: 80px 20px;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ */
+}
+
+.header .content {
+    position: relative;
+    z-index: 2;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Navbar */
+.navbar {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Container chung */
+.container {
+    max-width: 1200px;
+}
+
+/* Bộ lọc */
+.filters, .form-label {
+    font-weight: 500;
+}
+
+/* Bảng email */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Badge phân loại & mức độ ưu tiên */
+.badge {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.badge-info {
+    background: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.badge-danger {
+    background: #dc3545 !important;
+}
+
+.badge-warning {
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+
+.badge-success {
+    background: #28a745 !important;
+}
+
+/* Button hành động */
+.btn-success {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background: #157347 !important;
+}
+
+/* Footer */
+footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+}

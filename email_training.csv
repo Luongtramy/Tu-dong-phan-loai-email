@@ -1,0 +1,211 @@
+TieuDe,NoiDung,Nhan
+Sản phẩm bị lỗi,"Tôi nhận sản phẩm nhưng bị hỏng, không thể sử dụng.",Khiếu nại
+Sai đơn hàng,"Tôi đặt áo size M nhưng nhận size L, vui lòng kiểm tra.",Khiếu nại
+Thiếu phụ kiện,"Hộp hàng thiếu pin và dây sạc, xin kiểm tra lại.",Khiếu nại
+Hàng giao muộn,"Đơn hàng 456 đã quá hạn 5 ngày nhưng chưa nhận được.",Khiếu nại
+Hàng vỡ,"Sản phẩm bị vỡ khi giao đến, tôi muốn đổi mới.",Khiếu nại
+Nhận sai màu,"Tôi đặt áo xanh nhưng nhận áo đỏ, cần giải quyết.",Khiếu nại
+Sai số lượng,"Tôi đặt 2 sản phẩm nhưng chỉ nhận 1, vui lòng bổ sung.",Khiếu nại
+Hàng thiếu size,"Váy size M không có trong đơn hàng, cần hỗ trợ.",Khiếu nại
+Giao nhầm địa chỉ,"Sản phẩm giao đến nhầm địa chỉ, xin hướng dẫn lấy lại.",Khiếu nại
+Chậm hoàn tiền,"Tôi đã trả hàng nhưng tiền chưa được hoàn.",Khiếu nại
+Đơn bị hủy,"Đơn hàng 789 bị hủy mà tôi không yêu cầu, giải thích.",Khiếu nại
+Hàng không đúng mô tả,"Sản phẩm khác hình quảng cáo, yêu cầu giải quyết.",Khiếu nại
+Hàng bị trầy xước,"Túi xách bị trầy xước khi giao, cần đổi mới.",Khiếu nại
+Đặt nhiều lần bị trùng,"Tôi bị trừ tiền 2 lần cho đơn hàng 234.",Khiếu nại
+Giao thiếu món,"Đơn 345 thiếu 1 món, vui lòng bổ sung.",Khiếu nại
+Nhận hàng sai số lượng,"Tôi nhận ít hơn số lượng đặt, xin kiểm tra.",Khiếu nại
+Hàng lỗi kỹ thuật,"Đồng hồ không hoạt động, cần đổi mới.",Khiếu nại
+Sản phẩm hỏng,"Bình nước bị rò rỉ khi giao đến.",Khiếu nại
+Hàng giao chậm,"Tôi đặt đơn 567 mà đến nay vẫn chưa nhận được.",Khiếu nại
+Nhận nhầm sản phẩm,"Nhận áo size S thay vì M, vui lòng hỗ trợ đổi.",Khiếu nại
+Hàng bị mất,"Đơn hàng 678 chưa nhận được, không thấy vận chuyển.",Khiếu nại
+Nhận hàng cũ,"Sản phẩm bị trầy xước và cũ, yêu cầu đổi mới.",Khiếu nại
+Sai thông tin,"Nhãn sản phẩm in sai tên, cần sửa lại.",Khiếu nại
+Không nhận được đơn,"Tôi đặt hàng nhưng hệ thống báo lỗi, chưa nhận.",Khiếu nại
+Hàng không vừa,"Áo khoác size L quá chật, muốn đổi size.",Khiếu nại
+Sản phẩm bị mờ,"Áo in chữ mờ, không giống mẫu quảng cáo.",Khiếu nại
+Sai hóa đơn,"Hóa đơn đơn 890 bị sai, cần chỉnh sửa.",Khiếu nại
+Hàng bị rách,"Túi xách rách khi nhận hàng, yêu cầu đổi mới.",Khiếu nại
+Hàng giao nhầm,"Nhận váy khác màu so với đơn đặt.",Khiếu nại
+Sản phẩm lỗi,"Giày không thể đi được vì hỏng đế.",Khiếu nại
+Thiếu phụ kiện,"Hộp đồ chơi thiếu 1 món, cần bổ sung.",Khiếu nại
+Hàng bị vỡ,"Ly thủy tinh vỡ khi nhận hàng.",Khiếu nại
+Đơn hàng bị hủy,"Tôi không yêu cầu hủy nhưng đơn 901 đã bị hủy.",Khiếu nại
+Giao nhầm sản phẩm,"Nhận nhầm quần thay vì áo.",Khiếu nại
+Sản phẩm sai kích cỡ,"Váy size M nhận được size S, cần đổi.",Khiếu nại
+Hàng giao chậm,"Đơn 234 quá hạn, chưa nhận được.",Khiếu nại
+Hàng bị trầy,"Túi xách bị trầy khi giao đến, muốn đổi mới.",Khiếu nại
+Nhận thiếu sản phẩm,"Đơn 345 thiếu 1 món, cần bổ sung.",Khiếu nại
+Sản phẩm hỏng,"Máy xay bị hỏng khi giao đến.",Khiếu nại
+Sai màu,"Tôi nhận áo xanh thay vì đỏ.",Khiếu nại
+Hàng lỗi kỹ thuật,"Đồng hồ báo sai giờ, cần hỗ trợ.",Khiếu nại
+Nhận sai đơn,"Tôi nhận nhầm đơn hàng 678.",Khiếu nại
+Hàng bị móp,"Hộp đựng đồ bị móp khi giao đến.",Khiếu nại
+Đơn giao thiếu,"Nhận thiếu 2 món trong đơn 789.",Khiếu nại
+Hàng lỗi,"Áo khoác bị rách, yêu cầu đổi mới.",Khiếu nại
+Nhận hàng cũ,"Sản phẩm không mới như quảng cáo.",Khiếu nại
+Sai thông tin,"Nhãn sản phẩm in sai thông tin.",Khiếu nại
+Chậm hoàn tiền,"Đã trả hàng nhưng chưa nhận tiền.",Khiếu nại
+Hàng không đúng mô tả,"Sản phẩm khác hình, cần đổi mới.",Khiếu nại
+Nhận nhầm số lượng,"Tôi nhận ít hơn số lượng đặt.",Khiếu nại
+Hàng giao sai,"Nhận nhầm sản phẩm, cần đổi.",Khiếu nại
+Sản phẩm lỗi kỹ thuật,"Đồng hồ không chạy, cần đổi.",Khiếu nại
+Cải thiện giao hàng,"Tôi thấy thời gian giao hàng hơi chậm, mong cải thiện.",Góp ý
+Thêm phương thức thanh toán,"Có thể thêm thanh toán Momo/ZaloPay sẽ thuận tiện hơn.",Góp ý
+Giao hàng nhanh hơn,"Mong shop giao hàng nhanh hơn trong các đơn sau.",Góp ý
+Sản phẩm đa dạng,"Hi vọng shop thêm nhiều mẫu mã áo khoác mới.",Góp ý
+Hỗ trợ khách hàng,"Nhân viên nhiệt tình nhưng mong phản hồi nhanh hơn.",Góp ý
+Hình ảnh sản phẩm,"Ảnh sản phẩm nên chụp rõ hơn, thấy chi tiết hơn.",Góp ý
+Thông tin sản phẩm,"Thêm mô tả chi tiết về chất liệu và kích thước.",Góp ý
+Chính sách đổi trả,"Mong có hướng dẫn đổi trả dễ hiểu hơn.",Góp ý
+Giá cả hợp lý,"Mong shop giữ giá ổn định, đôi khi thay đổi nhanh quá.",Góp ý
+Đóng gói,"Hàng đóng gói đẹp nhưng có thể chắc chắn hơn.",Góp ý
+Hỗ trợ sau bán,"Mong nhân viên hỗ trợ sau bán nhanh hơn.",Góp ý
+Giao hàng thử,"Thử giao hàng vào giờ cố định để thuận tiện hơn.",Góp ý
+Mẫu mã đa dạng,"Nên thêm nhiều màu sắc và size khác nhau.",Góp ý
+Ưu đãi khách hàng,"Mong có thêm ưu đãi cho khách hàng thân thiết.",Góp ý
+Chất lượng sản phẩm,"Sản phẩm tốt nhưng mong nâng cao chất lượng vải.",Góp ý
+Website thân thiện,"Giao diện web dễ nhìn nhưng cần tối ưu tìm kiếm.",Góp ý
+Hướng dẫn đặt hàng,"Nên có video hướng dẫn đặt hàng nhanh.",Góp ý
+Phản hồi nhanh,"Mong phản hồi email nhanh hơn, không để lâu.",Góp ý
+Thanh toán đa dạng,"Nên hỗ trợ thêm nhiều hình thức thanh toán.",Góp ý
+Dịch vụ khách hàng,"Nhân viên thân thiện nhưng nên hỗ trợ 24/7.",Góp ý
+Chất lượng đóng gói,"Hàng đóng gói tốt nhưng nên chắc chắn hơn.",Góp ý
+Mẫu sản phẩm,"Nên có thêm mẫu sản phẩm mới theo mùa.",Góp ý
+Hướng dẫn sử dụng,"Nên gửi hướng dẫn sử dụng chi tiết cho khách.",Góp ý
+Hỗ trợ đổi size,"Hỗ trợ đổi size nhanh sẽ tốt hơn.",Góp ý
+Tối ưu website,"Tìm sản phẩm dễ hơn nếu thêm bộ lọc chi tiết.",Góp ý
+Giao hàng đúng hẹn,"Mong giao hàng đúng hẹn, không chậm trễ.",Góp ý
+Thêm voucher,"Nên có voucher cho khách hàng mới.",Góp ý
+Hình ảnh rõ ràng,"Ảnh sản phẩm nên chụp từ nhiều góc.",Góp ý
+Hàng theo mùa,"Thêm sản phẩm phù hợp theo mùa sẽ tốt.",Góp ý
+Giao hàng tận nơi,"Mong hỗ trợ giao hàng tận nơi nhanh hơn.",Góp ý
+Chất lượng sản phẩm,"Vải áo mịn, nhưng nên đa dạng hơn.",Góp ý
+Ưu đãi mùa lễ,"Mong có ưu đãi vào các dịp lễ lớn.",Góp ý
+Dịch vụ chăm sóc,"Hỗ trợ khách hàng tốt, nhưng nên có hotline riêng.",Góp ý
+Mua online dễ hơn,"Giao diện đặt hàng trực tuyến nên đơn giản hơn.",Góp ý
+Phản hồi email,"Nên phản hồi email nhanh chóng hơn.",Góp ý
+Đa dạng màu sắc,"Nên có nhiều màu sắc sản phẩm hơn.",Góp ý
+Chất lượng bao bì,"Bao bì đẹp, nhưng nên chắc chắn hơn khi vận chuyển.",Góp ý
+Hướng dẫn bảo quản,"Nên có hướng dẫn bảo quản sản phẩm chi tiết.",Góp ý
+Thanh toán nhanh,"Nên có thanh toán một bước để nhanh chóng hơn.",Góp ý
+Hỗ trợ trực tuyến,"Chat trực tuyến sẽ thuận tiện hơn cho khách.",Góp ý
+Sản phẩm mới,"Nên cập nhật sản phẩm mới hàng tuần.",Góp ý
+Hỗ trợ khách hàng,"Mong đội ngũ hỗ trợ trực tuyến nhanh hơn.",Góp ý
+Giao hàng chính xác,"Nên kiểm tra kỹ để tránh giao nhầm sản phẩm.",Góp ý
+Ưu đãi combo,"Có thể thêm ưu đãi combo cho khách hàng thường xuyên.",Góp ý
+Hình ảnh minh họa,"Ảnh sản phẩm nên có chú thích rõ ràng.",Góp ý
+Chất lượng dịch vụ,"Dịch vụ tốt nhưng nên đào tạo nhân viên chuyên nghiệp hơn.",Góp ý
+Giao hàng nhanh,"Thời gian giao hàng nên rút ngắn, đặc biệt đơn nhỏ.",Góp ý
+Tư vấn sản phẩm,"Nên có tư vấn trực tuyến về size và màu.",Góp ý
+Đổi trả thuận tiện,"Đổi trả nên thuận tiện và rõ ràng.",Góp ý
+Hỗ trợ khách hàng,"Nên có hỗ trợ qua điện thoại và email.",Góp ý
+Tối ưu website,"Nên thêm bộ lọc chi tiết để tìm sản phẩm dễ hơn.",Góp ý
+Thêm voucher,"Nên cung cấp voucher giảm giá cho khách hàng cũ.",Góp ý
+Đóng gói chắc chắn,"Hàng đóng gói tốt nhưng cần chắc chắn hơn khi vận chuyển.",Góp ý
+Đặt áo size M,"Tôi muốn đặt áo size M, màu xanh.",Đặt hàng
+Đặt quần jeans,"Tôi muốn đặt quần jeans size 32.",Đặt hàng
+Mua giày thể thao,"Cho tôi đặt giày thể thao size 40.",Đặt hàng
+Đặt váy đi tiệc,"Tôi muốn đặt váy màu đỏ size S.",Đặt hàng
+Mua áo khoác mùa đông,"Xin đặt áo khoác màu đen size L.",Đặt hàng
+Đặt balo du lịch,"Tôi muốn đặt balo màu xanh.",Đặt hàng
+Đặt nón bảo hiểm,"Tôi muốn mua nón bảo hiểm size M.",Đặt hàng
+Đặt đồng hồ thông minh,"Mua đồng hồ màu đen.",Đặt hàng
+Mua túi xách,"Đặt túi xách màu nâu.",Đặt hàng
+Đặt bộ cốc,"Xin đặt bộ 6 cốc thủy tinh.",Đặt hàng
+Đặt ghế văn phòng,"Mua ghế xoay màu đen.",Đặt hàng
+Đặt bàn làm việc,"Tôi muốn đặt bàn gỗ size 1.2m.",Đặt hàng
+Đặt tủ quần áo,"Xin đặt tủ 2 cánh màu trắng.",Đặt hàng
+Mua chăn ga gối,"Đặt bộ chăn ga gối 2 người.",Đặt hàng
+Đặt máy xay sinh tố,"Tôi muốn mua máy xay 1.5L.",Đặt hàng
+Đặt bình nước inox,"Mua bình nước màu bạc.",Đặt hàng
+Đặt nồi cơm điện,"Xin đặt nồi 1.8L.",Đặt hàng
+Đặt máy hút bụi,"Tôi muốn mua máy hút bụi 1200W.",Đặt hàng
+Đặt điện thoại mới,"Mua điện thoại màu đen, dung lượng 128GB.",Đặt hàng
+Đặt tai nghe bluetooth,"Tôi muốn mua tai nghe màu trắng.",Đặt hàng
+Đặt sạc dự phòng,"Xin đặt sạc dự phòng 10000mAh.",Đặt hàng
+Mua sách tiếng Anh,"Đặt sách luyện thi TOEIC.",Đặt hàng
+Đặt bút máy,"Mua bút màu xanh.",Đặt hàng
+Đặt giấy in,"Tôi muốn mua giấy in A4, 500 tờ.",Đặt hàng
+Đặt khăn tắm,"Xin đặt khăn tắm 70x140cm.",Đặt hàng
+Đặt đèn bàn học,"Mua đèn LED màu trắng.",Đặt hàng
+Đặt quạt điện,"Xin đặt quạt đứng màu trắng.",Đặt hàng
+Đặt áo sơ mi,"Tôi muốn mua áo sơ mi size L.",Đặt hàng
+Đặt áo thun,"Mua áo thun cotton size M.",Đặt hàng
+Đặt giày da,"Xin đặt giày da size 42.",Đặt hàng
+Đặt dây sạc,"Tôi muốn mua dây sạc Type-C.",Đặt hàng
+Đặt túi đeo chéo,"Mua túi màu đen.",Đặt hàng
+Đặt bánh kẹo,"Xin đặt hộp bánh 500g.",Đặt hàng
+Đặt trà sữa,"Tôi muốn mua 10 ly trà sữa.",Đặt hàng
+Đặt hoa tươi,"Mua bó hoa hồng 12 bông.",Đặt hàng
+Đặt bánh sinh nhật,"Xin đặt bánh 1kg.",Đặt hàng
+Đặt đồng hồ treo tường,"Mua đồng hồ màu trắng.",Đặt hàng
+Đặt ghế sofa,"Tôi muốn đặt ghế sofa 2 chỗ.",Đặt hàng
+Đặt tủ lạnh mini,"Xin đặt tủ lạnh 100L.",Đặt hàng
+Đặt máy giặt,"Mua máy giặt 7kg.",Đặt hàng
+Đặt bếp từ,"Tôi muốn mua bếp từ đôi.",Đặt hàng
+Đặt lò vi sóng,"Xin đặt lò vi sóng 20L.",Đặt hàng
+Đặt bình nóng lạnh,"Mua bình nóng lạnh 30L.",Đặt hàng
+Đặt máy lạnh,"Tôi muốn mua máy lạnh 1.5HP.",Đặt hàng
+Đặt nệm foam,"Xin đặt nệm 1.6m x 2m.",Đặt hàng
+Đặt ghế xếp,"Mua ghế xếp gấp.",Đặt hàng
+Đặt bàn học sinh,"Tôi muốn mua bàn học 1.2m.",Đặt hàng
+Đặt đèn ngủ,"Xin đặt đèn ngủ màu vàng.",Đặt hàng
+Đặt rèm cửa,"Mua rèm vải màu xanh.",Đặt hàng
+Đặt chảo chống dính,"Tôi muốn mua chảo 26cm.",Đặt hàng
+Đặt bình giữ nhiệt,"Xin đặt bình 500ml.",Đặt hàng
+Đặt túi vải,"Mua túi vải đeo vai.",Đặt hàng
+Đặt giày sneakers,"Tôi muốn mua giày màu trắng.",Đặt hàng
+Đặt áo hoodie,"Xin đặt áo hoodie màu xám.",Đặt hàng
+Đặt bút bi,"Mua bút bi xanh.",Đặt hàng
+Câu hỏi về sản phẩm,"Áo khoác size M có màu khác không?",Hỏi đáp
+Sản phẩm còn hàng không,"Bạn còn áo thun màu trắng size L không?",Hỏi đáp
+Hỏi giá sản phẩm,"Giá máy xay sinh tố bao nhiêu?",Hỏi đáp
+Hỏi về bảo hành,"Thời gian bảo hành điện thoại là bao lâu?",Hỏi đáp
+Hỏi về đổi trả,"Mình muốn đổi size áo, thủ tục như thế nào?",Hỏi đáp
+Hỏi về vận chuyển,"Đơn hàng 456 gửi đi bao lâu nhận được?",Hỏi đáp
+Hỏi về voucher,"Voucher 10% còn sử dụng được không?",Hỏi đáp
+Hỏi cách thanh toán,"Có thể thanh toán qua Momo được không?",Hỏi đáp
+Hỏi màu khác,"Áo màu xanh có còn size M không?",Hỏi đáp
+Hỏi về chất liệu,"Áo khoác này làm từ chất liệu gì?",Hỏi đáp
+Hỏi về mẫu mới,"Khi nào shop có áo mới?",Hỏi đáp
+Hỏi về combo,"Có khuyến mãi mua combo không?",Hỏi đáp
+Hỏi về quà tặng,"Mua sản phẩm này có được tặng quà không?",Hỏi đáp
+Hỏi về phí ship,"Phí ship đơn hàng bao nhiêu?",Hỏi đáp
+Hỏi cách đặt hàng,"Làm sao để đặt hàng online?",Hỏi đáp
+Hỏi về chính sách,"Shop có chính sách hoàn tiền không?",Hỏi đáp
+Hỏi về màu sắc,"Áo màu đỏ còn size L không?",Hỏi đáp
+Hỏi về size,"Size S có vừa với cao 1m65 không?",Hỏi đáp
+Hỏi về chất lượng,"Sản phẩm có bền không?",Hỏi đáp
+Hỏi về mẫu mã,"Sản phẩm này có mấy màu?",Hỏi đáp
+Hỏi về kho hàng,"Còn sản phẩm này tại kho không?",Hỏi đáp
+Hỏi về thanh toán,"Có thể trả góp được không?",Hỏi đáp
+Hỏi về đơn hàng,"Tôi muốn biết trạng thái đơn 123.",Hỏi đáp
+Hỏi về hỗ trợ,"Nhân viên hỗ trợ online lúc nào?",Hỏi đáp
+Hỏi về khuyến mãi,"Có chương trình khuyến mãi nào không?",Hỏi đáp
+Hỏi về bảo quản,"Làm sao để bảo quản áo tốt?",Hỏi đáp
+Hỏi về đổi trả,"Thời gian đổi trả tối đa bao lâu?",Hỏi đáp
+Hỏi về số lượng,"Tôi muốn mua 10 sản phẩm có đủ không?",Hỏi đáp
+Hỏi về dịch vụ,"Dịch vụ hỗ trợ khách hàng như thế nào?",Hỏi đáp
+Hỏi về đóng gói,"Sản phẩm có được đóng gói đẹp không?",Hỏi đáp
+Hỏi về vận chuyển nhanh,"Có giao hàng nhanh trong 24h không?",Hỏi đáp
+Hỏi về màu khác,"Tôi muốn màu xanh thay vì đỏ có được không?",Hỏi đáp
+Hỏi về sản phẩm mới,"Khi nào shop có mẫu mới?",Hỏi đáp
+Hỏi về hoàn tiền,"Nếu trả hàng có được hoàn tiền không?",Hỏi đáp
+Hỏi về thanh toán online,"Thanh toán online có an toàn không?",Hỏi đáp
+Hỏi về quà tặng,"Mua sản phẩm này có tặng voucher không?",Hỏi đáp
+Hỏi về chính sách,"Shop có hỗ trợ đổi trả miễn phí không?",Hỏi đáp
+Hỏi về bảo hành,"Sản phẩm hỏng có được bảo hành không?",Hỏi đáp
+Hỏi về ship COD,"Có thể thanh toán khi nhận hàng không?",Hỏi đáp
+Hỏi về vận chuyển quốc tế,"Ship quốc tế có hỗ trợ không?",Hỏi đáp
+Hỏi về size áo,"Size XL có vừa với cao 1m80 không?",Hỏi đáp
+Hỏi về chất liệu,"Chất liệu có co giãn tốt không?",Hỏi đáp
+Hỏi về combo sản phẩm,"Mua combo có giảm giá không?",Hỏi đáp
+Hỏi về voucher,"Voucher có giới hạn thời gian không?",Hỏi đáp
+Hỏi về đăng ký thành viên,"Làm sao để đăng ký tài khoản?",Hỏi đáp
+Hỏi về bảo quản sản phẩm,"Làm sao để giặt áo đúng cách?",Hỏi đáp
+Hỏi về hỗ trợ kỹ thuật,"Máy giặt lỗi cần liên hệ ai?",Hỏi đáp
+Hỏi về sản phẩm thiếu,"Đơn hàng thiếu sản phẩm, cần hỗ trợ?",Hỏi đáp
+Hỏi về chi tiết sản phẩm,"Áo có túi hay không?",Hỏi đáp
+Hỏi về khuyến mãi,"Khuyến mãi mua 2 tặng 1 còn không?",Hỏi đáp
